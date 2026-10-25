@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guerreiro 3D - feito com Three.js</title>
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; font-family: system-ui, sans-serif; }
+    canvas { display: block; }
+    #painel {
+      position: fixed; top: 12px; left: 12px; display: flex; flex-direction: column; gap: 6px;
+      background: rgba(0, 0, 0, 0.65); padding: 12px; border-radius: 10px; width: 190px;
+    }
+    #painel h3 { margin: 0 0 4px; color: #fff; font-size: 14px; }
+    #painel button {
+      padding: 8px; border: 0; border-radius: 6px; background: #3b82f6; color: #fff;
+      cursor: pointer; font-size: 13px; text-align: left;
+    }
+    #painel button.ativo { background: #22c55e; }
+    #painel button.seq { background: #9333ea; }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="painel"><h3>Animações</h3></div>
+  <script type="module" src="guerreiro.js"></script>
+</body>
+</html>
